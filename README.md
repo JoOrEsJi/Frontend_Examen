@@ -1,3 +1,24 @@
+Funciones añadidas:
+GESTOR DE MENSAJERÍA
+Creado ficheros para:
+MODELO de mensaje (remitente, destinatario, contenido del mensaje, fecha, referencia a otro mensaje)
+RUTA de mensaje
+CONTROLADOR de mensaje
+SERVICIOS de mensaje
+
+
+FRONT-END
+MODELO de mensaje
+SERVICIO de mensaje
+COMPONENTE standalone mensaje
+
+
+No aparece el formulario en el backoffice. Todo lo demás, ficheros y dependencias, está añadido. De nuevo, alguna línea me debe faltar.
+
+
+
+
+
 # AngularSeminari6
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
