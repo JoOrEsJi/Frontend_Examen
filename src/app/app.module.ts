@@ -17,6 +17,7 @@ import { UserEditComponent } from './components/user-edit/user-edit.component';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 import { UserCreateComponent } from './components/user-create/user-create.component';
 
+
 import { ActivitiesComponent } from './backoffice-activity/backoffice-activity.component';*/
 
 @NgModule({
@@ -30,6 +31,7 @@ import { ActivitiesComponent } from './backoffice-activity/backoffice-activity.c
     ConfirmDialogComponent,
     UserCreateComponent,
     ActivitiesComponent
+    MessagesComponent,
   ],*/
   imports: [
     BrowserModule,

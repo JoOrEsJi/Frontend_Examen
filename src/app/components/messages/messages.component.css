@@ -1,0 +1,55 @@
+h2 {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  small {
+    color: #666;
+  }
+  
+  input, textarea {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #1976d2;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #125a9c;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  .pagination {
+    margin-top: 10px;
+    text-align: center;
+  }
+  

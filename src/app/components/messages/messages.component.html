@@ -1,0 +1,25 @@
+<h2>Mensajes</h2>
+
+<input type="text" [(ngModel)]="search" placeholder="Buscar..." />
+<button (click)="loadMessages()">Buscar</button>
+
+<ul>
+  <li *ngFor="let msg of messages">
+    <strong>{{ msg.sender }}</strong> ➤ <strong>{{ msg.receiver }}</strong><br />
+    {{ msg.content }} <br />
+    <small>{{ msg.date | date:'short' }}</small>
+    <button (click)="deleteMessage(msg._id!)">Eliminar</button>
+  </li>
+</ul>
+
+<button (click)="prevPage()" [disabled]="page === 1">Anterior</button>
+<button (click)="nextPage()">Siguiente</button>
+
+<h3>Nuevo mensaje</h3>
+<form (ngSubmit)="sendMessage()">
+  <input type="text" [(ngModel)]="newMessage.sender" name="sender" placeholder="Emisor" required />
+  <input type="text" [(ngModel)]="newMessage.receiver" name="receiver" placeholder="Receptor" required />
+  <textarea [(ngModel)]="newMessage.content" name="content" placeholder="Mensaje" required></textarea>
+  <input type="text" [(ngModel)]="newMessage.replyTo" name="replyTo" placeholder="Responder a (opcional)" />
+  <button type="submit">Enviar</button>
+</form>

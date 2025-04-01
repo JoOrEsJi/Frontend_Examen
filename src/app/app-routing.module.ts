@@ -4,12 +4,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { UserEditComponent } from './components/user-edit/user-edit.component';
 import { BackOfficeComponent } from './backoffice/backoffice.component';
+import { MessagesComponent } from './components/messages/messages.component';
 
 const routes: Routes = [
   { path: 'users', component: UserListComponent },
   { path: 'users/edit/:id', component: UserEditComponent },
   { path: 'admin', component: BackOfficeComponent },
   { path: '', redirectTo: '/users', pathMatch: 'full' },
+  { path: 'messages', component: MessagesComponent },
+  { path: '**', redirectTo: 'messages'},
   //{ path:'**', component: PageNotFoundComponent}
 ];
 
